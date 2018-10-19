@@ -13,4 +13,9 @@ func main() {
 		sep = " "
 	}
 	fmt.Println(s)
+
+	m := make(map[string]*string)
+	str := "teste"
+
+	m["test"] = &str
 }
