@@ -14,7 +14,7 @@ func main() {
 	go doSomething()
 
 	fmt.Println("end")
-	//wg.Wait() //wait for all things to be done
+	wg.Wait() //wait for all things to be done
 
 }
 
