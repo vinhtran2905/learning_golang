@@ -39,6 +39,9 @@ func main() {
 	fmt.Println("Looping through shapes for area ...")
 
 	for _, s := range shaperArr {
+		if check, isSquare := s.(Square); isSquare {
+			fmt.Printf("%v is a square\n", check)
+		}
 		fmt.Printf("Shape detail %v\n", s)
 		fmt.Printf("Area of shape is %v\n", s.Area())
 
